@@ -18,37 +18,123 @@ knitr::opts_chunk$set(
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of gbtransparency is to ...
+`gbtransparency` is primarily a data package enabling an efficient method for working with [Green Bond Transparency datasets](https://www.greenbondtransparency.com/support/resources/) in R. 
+
+### About the Green Bond Transparency datasets:
+
+The Green Bond Transparency(GBTP) has developed a free and public integrated dataset of all the bond's information included in the platform presented in five export-files.  `gbtransparency` helps users to access files. These files are: 
+
+(1) `bond's` general information 
+(2) `allocation` of proceeds to project categories using international standards (GBP, CBI) 
+(3) `measurements` of impact and outcome KPIs
+(4) individual bond-`tranche` information 
+(5) detailed information of the `projects` receiving disbursements.
+
+There is also an additional file named `index`. This shows description of variable names per data.
+
+### Relevant Notes
+
+1. **`gbtransparency` is still under heavy development**: Please use accordingly. The initial phase of package development aims to finalize stable versions of the datasets, and will be announced with a new package version release and note. Further development will focus on building helper functions to aid efficient analysis workflows with the dataset.
+
+2. **`gbtransparency` is a personal project**:  While the package author works as a [consultant to AidData](https://www.linkedin.com/feed/update/urn:li:activity:7067478837885849600/) this package is a personal project. The author built the package for his own own use, but hopes that it can grow into a robust package that can aid researchers, policymakers, and others interested in gaining actionable, empirically-based insights about Green Bond Transparency datasets. 
 
 ## Installation
 
-You can install the development version of gbtransparency like so:
+You can install the development version of `gbtransparency` from [GitHub](https://github.com/) with:
 
 ``` r
-# FILL THIS IN! HOW CAN PEOPLE INSTALL YOUR DEV PACKAGE?
+# install the `devtools` package if not yet installed
+# install.packages("devtools")
+
+# install chinadevfin2 from GitHub
+devtools::install_github("Teal-Insights/gbtransparency")
 ```
 
-## Example
+This package will likely never be published on [CRAN](https://cran.r-project.org/) because the data file sizes are too big.
 
-This is a basic example which shows you how to solve a common problem:
+## Using gbtransparency package
+
+The datasets in the packages are as follow:
+```{r echo=FALSE, message=FALSE,warning=FALSE}
+library(tidyverse)
+base::data.frame(
+  package_data_name = c(
+    "gbt_allocations",
+  "gbt_bonds",
+  "gbt_key_performance_indicators",
+  "gbt_projects",
+  "gbt_tranches",
+  "gbt_data_dictionary"),
+website_data_description = c(
+  "allocation of proceeds to project categories using international standards (GBP, CBI)",
+  "bond's general information",
+  "measurements of impact and outcome KPIs",
+  "detailed information of the projects receiving disbursements",
+  "individual bond-tranche information",
+  "index (description of variable names per data.)")
+) %>% knitr::kable()
+```
+
+```{r}
+
+```
+
+Now we can have a look at the first six observations per data
 
 ```{r example}
 library(gbtransparency)
 ## basic example code
 ```
 
-What is special about using `README.Rmd` instead of just `README.md`? You can include R chunks like so:
+```{r}
 
-```{r cars}
-summary(cars)
+```
+a) `gbt_allocations`:	allocation of proceeds to project categories using international standards (GBP, CBI)
+```{r}
+utils::head(x = gbt_allocations) %>% knitr::kable()
 ```
 
-You'll still need to render `README.Rmd` regularly, to keep `README.md` up-to-date. `devtools::build_readme()` is handy for this.
+```{r}
 
-You can also embed plots, for example:
-
-```{r pressure, echo = FALSE}
-plot(pressure)
+```
+b) `gbt_bonds`:	bond’s general information
+```{r}
+utils::head(x = gbt_bonds) %>% knitr::kable()
 ```
 
-In that case, don't forget to commit and push the resulting figure files, so they display on GitHub and CRAN.
+```{r}
+
+```
+c) `gbt_key_performance_indicators`:	measurements of impact and outcome KPIs
+```{r}
+utils::head(x = gbt_key_performance_indicators) %>% knitr::kable()
+```
+
+```{r}
+
+```
+d) `gbt_projects`:	detailed information of the projects receiving disbursements
+```{r}
+utils::head(x = gbt_projects) %>% knitr::kable()
+```
+
+```{r}
+
+```
+e) `gbt_tranches`:	individual bond-tranche information
+```{r}
+utils::head(x = gbt_tranches) %>% knitr::kable()
+```
+
+```{r}
+
+```
+f) `gbt_data_dictionary`:	index (description of variable names per data.)
+```{r}
+utils::head(x = gbt_data_dictionary) %>% knitr::kable()
+```
+
+```{r}
+
+```
+
