@@ -1,8 +1,9 @@
-#' Description of variables in `gbt_allocations` dataset.
+#' @title Green Bond Transparency - Data by Allocations.
 #'
-#' A data dictionary for the `gbt_allocations`
+#' @description
+#' Description of variables in the `gbt_allocations` tibble
 #'
-#' @format A tibble with 2278 rows and 17 variables:
+#' @format A tibble with 2278 observations and 17 variables:
 #' \describe{
 #'   \item{bond_handle}{Unique code of the bond registrered in the Green Bond Transparency Platform showed in the bond link.}
 #'   \item{bond_name}{Name of the bond in the paltform created by the issuer.}
@@ -25,6 +26,6 @@
 #'   \item{cofinancing_percentage}{Share of the total value of the project that was co-finance using the bond proceeds.}
 #'
 #' }
-#' @source \url{https://gbtp-logs.s3.amazonaws.com/dumps/allocations.csv}
-
+#' @seealso \code{\link{gbt_data_dictionary}}
+#' @source \href{https://www.greenbondtransparency.com/support/resources/}{Green Bond Transparency - Data by Allocations.}
 "gbt_allocations"

@@ -3,9 +3,9 @@
 \docType{data}
 \name{gbt_data_dictionary}
 \alias{gbt_data_dictionary}
-\title{Description of variables in `gbt_data_dictionary` dataset.}
+\title{Green Bond Transparency - Data by Index}
 \format{
-A tibble with 77 rows and 5 variables:
+A tibble with 77 observations and 5 variables:
 \describe{
   \item{data}{a vector of dataframe. That is Bonds, Allocations, Key Performance Indicators,Tranches and Projects.}
   \item{ref_no}{Reference number for each variable in a dataframe.}
@@ -16,12 +16,15 @@ A tibble with 77 rows and 5 variables:
 }
 }
 \source{
-\url{https://www.greenbondtransparency.com/support/resources/index-gbtp-data-en-v3.xlsx}
+\href{https://www.greenbondtransparency.com/support/resources/}{Green Bond Transparency - Data by Index}
 }
 \usage{
 gbt_data_dictionary
 }
 \description{
-A summary of the `gbt_data_dictionary`
+Description of variables in the `gbt_data_dictionary` tibble
+}
+\seealso{
+\code{\link{gbt_data_dictionary}}
 }
 \keyword{datasets}

@@ -1,9 +1,10 @@
 
-#' Description of variables in `gbt_projects` dataset.
+#' @title Green Bond Transparency - Data by Projects
 #'
-#' A summary of the `gbt_projects`
+#' @description
+#' Description of variables in the `gbt_projects` tibble
 #'
-#' @format A tibble with 1400 rows and 15 variables:
+#' @format A tibble with 1400 observations and 15 variables:
 #' \describe{
 #'   \item{bond_handle}{Unique code of the bond registered in the Green Bond Transparency Platform showed in the bond link.}
 #'   \item{bond_name}{Name of the bond in the platform created by the issuer.}
@@ -22,6 +23,6 @@
 #'   \item{description}{Description of the use of proceeds, location, operation and period of the project.}
 #'
 #' }
-#' @source \url{https://gbtp-logs.s3.amazonaws.com/dumps/projects.csv}
-
+#' @seealso \code{\link{gbt_data_dictionary}}
+#' @source \href{https://www.greenbondtransparency.com/support/resources/}{Green Bond Transparency - Data by Projects}
 "gbt_projects"

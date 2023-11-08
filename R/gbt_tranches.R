@@ -1,6 +1,7 @@
-#' Description of variables in `gbt_tranches` dataset.
+#' @title Green Bond Transparency - Data by Tranches.
 #'
-#' A summary of the `gbt_tranches`
+#' @description
+#' Description of variables in the `gbt_tranches` tibble
 #'
 #' @format A tibble with 190 observations and 10 variables:
 #' \describe{
@@ -16,6 +17,6 @@
 #'   \item{volume_raised_usd}{USD equivalent of the volume raised.}
 #'
 #' }
-#' @source \url{https://gbtp-logs.s3.amazonaws.com/dumps/tranches.csv}
-
+#' @seealso \code{\link{gbt_data_dictionary}}
+#' @source \href{https://www.greenbondtransparency.com/support/resources/}{Green Bond Transparency - Data by Tranches}
 "gbt_tranches"

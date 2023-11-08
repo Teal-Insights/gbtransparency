@@ -3,7 +3,7 @@
 \docType{data}
 \name{gbt_tranches}
 \alias{gbt_tranches}
-\title{Description of variables in `gbt_tranches` dataset.}
+\title{Green Bond Transparency - Data by Tranches.}
 \format{
 A tibble with 190 observations and 10 variables:
 \describe{
@@ -21,12 +21,15 @@ A tibble with 190 observations and 10 variables:
 }
 }
 \source{
-\url{https://gbtp-logs.s3.amazonaws.com/dumps/tranches.csv}
+\href{https://www.greenbondtransparency.com/support/resources/}{Green Bond Transparency - Data by Tranches}
 }
 \usage{
 gbt_tranches
 }
 \description{
-A summary of the `gbt_tranches`
+Description of variables in the `gbt_tranches` tibble
+}
+\seealso{
+\code{\link{gbt_data_dictionary}}
 }
 \keyword{datasets}

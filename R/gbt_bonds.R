@@ -1,9 +1,10 @@
 
-#' Description of variables in `gbt_bonds` dataset.
+#' @title Green Bond Transparency - Data by Bonds.
 #'
-#' A data dictionary for the `gbt_bonds`
+#' @description
+#' Description of variables in the `gbt_bonds` tibble
 #'
-#' @format A tibble with 177 rows and 17 variables:
+#' @format A tibble with 177 observations and 17 variables:
 #' \describe{
 #'   \item{link}{Unique link to the bond data in the Green Bond Transparency Platform website.}
 #'   \item{handle}{Unique code of the bond registrered in the Green Bond Transparency Platform showed in the bond link.}
@@ -23,6 +24,6 @@
 #'   \item{bond_currency}{The denominated currency of the bond.}
 #'
 #' }
-#' @source \url{https://gbtp-logs.s3.amazonaws.com/dumps/bonds.csv}
-
+#' @seealso \code{\link{gbt_data_dictionary}}
+#' @source \href{https://www.greenbondtransparency.com/support/resources/}{Green Bond Transparency - Data by Bonds}
 "gbt_bonds"

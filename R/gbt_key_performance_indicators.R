@@ -1,9 +1,10 @@
 
-#' Description of variables in `gbt_key_performance_indicators` dataset.
+#' @title Green Bond Transparency - Data by Key Performance Indicators
 #'
-#' A summary of the `gbt_key_performance_indicators`
+#' @description
+#' Description of variables in the `gbt_key_performance_indicators` tibble
 #'
-#' @format A tibble with 4820 rows and 15 variables:
+#' @format A tibble with 4820 observations and 15 variables:
 #' \describe{
 #'   \item{bond_handle}{Unique code of the bond registrered in the Green Bond Transparency Platform showed in the bond link.}
 #'   \item{bond_name}{Name of the bond in the paltform created by the issuer.}
@@ -24,6 +25,6 @@
 #'   \item{measurement_period_end}{mm/dd/yyyy when starts the mesuring KPI period.}
 #'
 #' }
-#' @source \url{https://gbtp-logs.s3.amazonaws.com/dumps/measurements.csv}
-
+#' @seealso \code{\link{gbt_data_dictionary}}
+#' @source \href{https://www.greenbondtransparency.com/support/resources/}{Green Bond Transparency - Data by Key Performance Indicators}
 "gbt_key_performance_indicators"

@@ -3,9 +3,9 @@
 \docType{data}
 \name{gbt_key_performance_indicators}
 \alias{gbt_key_performance_indicators}
-\title{Description of variables in `gbt_key_performance_indicators` dataset.}
+\title{Green Bond Transparency - Data by Key Performance Indicators}
 \format{
-A tibble with 4820 rows and 15 variables:
+A tibble with 4820 observations and 15 variables:
 \describe{
   \item{bond_handle}{Unique code of the bond registrered in the Green Bond Transparency Platform showed in the bond link.}
   \item{bond_name}{Name of the bond in the paltform created by the issuer.}
@@ -28,12 +28,15 @@ A tibble with 4820 rows and 15 variables:
 }
 }
 \source{
-\url{https://gbtp-logs.s3.amazonaws.com/dumps/measurements.csv}
+\href{https://www.greenbondtransparency.com/support/resources/}{Green Bond Transparency - Data by Key Performance Indicators}
 }
 \usage{
 gbt_key_performance_indicators
 }
 \description{
-A summary of the `gbt_key_performance_indicators`
+Description of variables in the `gbt_key_performance_indicators` tibble
+}
+\seealso{
+\code{\link{gbt_data_dictionary}}
 }
 \keyword{datasets}

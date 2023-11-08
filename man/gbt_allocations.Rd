@@ -3,9 +3,9 @@
 \docType{data}
 \name{gbt_allocations}
 \alias{gbt_allocations}
-\title{Description of variables in `gbt_allocations` dataset.}
+\title{Green Bond Transparency - Data by Allocations.}
 \format{
-A tibble with 2278 rows and 17 variables:
+A tibble with 2278 observations and 17 variables:
 \describe{
   \item{bond_handle}{Unique code of the bond registrered in the Green Bond Transparency Platform showed in the bond link.}
   \item{bond_name}{Name of the bond in the paltform created by the issuer.}
@@ -30,12 +30,15 @@ A tibble with 2278 rows and 17 variables:
 }
 }
 \source{
-\url{https://gbtp-logs.s3.amazonaws.com/dumps/allocations.csv}
+\href{https://www.greenbondtransparency.com/support/resources/}{Green Bond Transparency - Data by Allocations.}
 }
 \usage{
 gbt_allocations
 }
 \description{
-A data dictionary for the `gbt_allocations`
+Description of variables in the `gbt_allocations` tibble
+}
+\seealso{
+\code{\link{gbt_data_dictionary}}
 }
 \keyword{datasets}

@@ -3,9 +3,9 @@
 \docType{data}
 \name{gbt_bonds}
 \alias{gbt_bonds}
-\title{Description of variables in `gbt_bonds` dataset.}
+\title{Green Bond Transparency - Data by Bonds.}
 \format{
-A tibble with 177 rows and 17 variables:
+A tibble with 177 observations and 17 variables:
 \describe{
   \item{link}{Unique link to the bond data in the Green Bond Transparency Platform website.}
   \item{handle}{Unique code of the bond registrered in the Green Bond Transparency Platform showed in the bond link.}
@@ -27,12 +27,15 @@ A tibble with 177 rows and 17 variables:
 }
 }
 \source{
-\url{https://gbtp-logs.s3.amazonaws.com/dumps/bonds.csv}
+\href{https://www.greenbondtransparency.com/support/resources/}{Green Bond Transparency - Data by Bonds}
 }
 \usage{
 gbt_bonds
 }
 \description{
-A data dictionary for the `gbt_bonds`
+Description of variables in the `gbt_bonds` tibble
+}
+\seealso{
+\code{\link{gbt_data_dictionary}}
 }
 \keyword{datasets}
