@@ -26,6 +26,7 @@
 #'   \item{cofinancing_percentage}{Share of the total value of the project that was co-finance using the bond proceeds.}
 #'
 #' }
+#' @importFrom dplyr `%>%`
 #' @seealso \code{\link{gbt_data_dictionary}}
 #' @source \href{https://www.greenbondtransparency.com/support/resources/}{Green Bond Transparency - Data by Allocations.}
 "gbt_allocations"

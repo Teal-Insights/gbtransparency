@@ -1,6 +1,7 @@
 
 # Preparing data: ---------------------------------------------------------
 library(magrittr)
+
 data_path = "https://gbtp-logs.s3.amazonaws.com/dumps/allocations.csv"
 gbt_allocations <- readr::read_csv(file = data_path) %>%
   janitor::clean_names()
