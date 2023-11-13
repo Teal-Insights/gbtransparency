@@ -8,7 +8,7 @@ gbt_allocations <- readr::read_csv(file = data_path) %>%
 
 # Exporting data: ---------------------------------------------------------
 # exporting to ins/extdata directory
-readr::write_csv(x = gbt_allocations,file = "inst/extdata/gbt_allocations.csv")
+readr::write_csv(x = gbt_allocations,file = "data-raw/extdata/gbt_allocations.csv")
 
 # exporting to data directory
 usethis::use_data(gbt_allocations, overwrite = TRUE,compress = "xz")

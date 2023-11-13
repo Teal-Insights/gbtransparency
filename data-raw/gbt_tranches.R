@@ -7,7 +7,7 @@ gbt_tranches <- readr::read_csv(file = data_path) %>%
 
 # Exporting data: ---------------------------------------------------------
 # exporting to ins/extdata directory
-readr::write_csv(x = gbt_tranches,file = "inst/extdata/gbt_tranches.csv")
+readr::write_csv(x = gbt_tranches,file = "data-raw/extdata/gbt_tranches.csv")
 
 # exporting to data directory
 usethis::use_data(gbt_tranches, overwrite = TRUE,compress = "xz")

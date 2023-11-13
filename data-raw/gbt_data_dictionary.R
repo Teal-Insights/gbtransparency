@@ -30,7 +30,7 @@ if(base::sum(base::ls() %in% "index_gbtp_data_en_v3") > 0){base::rm(list = "inde
 
 # Exporting data: ---------------------------------------------------------
 # exporting to ins/extdata directory
-readr::write_csv(x = gbt_data_dictionary,file = "inst/extdata/gbt_data_dictionary.csv")
+readr::write_csv(x = gbt_data_dictionary,file = "data-raw/extdata/gbt_data_dictionary.csv")
 
 # exporting to data directory
 usethis::use_data(gbt_data_dictionary, overwrite = TRUE,compress = "xz")
