@@ -6,6 +6,8 @@
 <!-- badges: start -->
 
 [![R-CMD-check](https://github.com/Teal-Insights/gbtransparency/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/Teal-Insights/gbtransparency/actions/workflows/R-CMD-check.yaml)
+[![License:
+CC0](https://img.shields.io/badge/License-CC0-lightgrey.svg)](https://choosealicense.com/licenses/cc0-1.0/)
 <!-- badges: end -->
 
 `gbtransparency` is primarily a data package enabling an efficient
