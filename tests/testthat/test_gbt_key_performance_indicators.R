@@ -2,18 +2,28 @@
 # start of test: ----------------------------------------------------------
 # test 1: check if the data object is a tibble
 testthat::test_that(desc = "Data object is a tibble", code = {
-  testthat::expect_s3_class(gbt_key_performance_indicators, "tbl_df")
+  testthat::expect_s3_class(object = gbt_key_performance_indicators, class = "tbl_df")
 })
 
 # test 2: check if the number of rows is 4820
 testthat::test_that(desc = "Number of rows is 4820", code = {
-  testthat::expect_equal(nrow(gbt_key_performance_indicators), 4820)
+  testthat::expect_equal(object = nrow(gbt_key_performance_indicators), expected = 4820)
 })
 
 # test 3: check if the number of columns is 15
 testthat::test_that(desc = "Number of columns is 15", code = {
-  testthat::expect_equal(ncol(gbt_key_performance_indicators), 15)
+  testthat::expect_equal(object = ncol(gbt_key_performance_indicators), expected = 15)
 })
+
+# test 4: check if there are column names containing the word "bond"
+testthat::test_that(desc = "There is a column name containing the word 'bond'",
+                    code = {
+                      testthat::expect_gt(
+                        object = base::sum(base::grepl(pattern = "bond",
+                                                       x = base::names(gbt_key_performance_indicators))),
+                        expected = 0)
+                    }
+)
 
 # End of test: ------------------------------------------------------------
 
