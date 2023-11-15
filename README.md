@@ -12,6 +12,7 @@ coverage](https://github.com/Teal-Insights/gbtransparency/actions/workflows/test
 [![codecov](https://codecov.io/gh/Teal-Insights/gbtransparency/branch/master/graph/badge.svg)](https://codecov.io/gh/Teal-Insights/gbtransparency)
 [![License:
 CC0](https://img.shields.io/badge/License-CC0-lightgrey.svg)](https://choosealicense.com/licenses/cc0-1.0/)
+[![Website](https://github.com/Teal-Insights/gbtransparency/actions/workflows/pkgdown.yaml/badge.svg)](https://github.com/Teal-Insights/gbtransparency/actions/workflows/pkgdown.yaml)
 <!-- badges: end -->
 
 `gbtransparency` is primarily a data package enabling an efficient
