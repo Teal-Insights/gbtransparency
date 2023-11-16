@@ -156,12 +156,10 @@
 </table>
 <p>Now we can have a look at the first six observations per data</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://special-adventure-gq3r94k.pages.github.io/">gbtransparency</a></span><span class="op">)</span></span>
-<span><span class="co">## basic example code</span></span></code></pre></div>
-</div>
-<div class="section level3">
-<h3 id="a-gbt_allocations-allocation-of-proceeds-to-project-categories-using-international-standards-gbp-cbi">a) <code>gbt_allocations</code>: allocation of proceeds to project categories using international standards (GBP, CBI)<a class="anchor" aria-label="anchor" href="#a-gbt_allocations-allocation-of-proceeds-to-project-categories-using-international-standards-gbp-cbi"></a>
-</h3>
+<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://special-adventure-gq3r94k.pages.github.io/">gbtransparency</a></span><span class="op">)</span></span></code></pre></div>
+<div class="section level4">
+<h4 id="a-gbt_allocations-allocation-of-proceeds-to-project-categories-using-international-standards-gbp-cbi">a) <code>gbt_allocations</code>: allocation of proceeds to project categories using international standards (GBP, CBI)<a class="anchor" aria-label="anchor" href="#a-gbt_allocations-allocation-of-proceeds-to-project-categories-using-international-standards-gbp-cbi"></a>
+</h4>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu">utils</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">gbt_allocations</span><span class="op">)</span> <span class="op">%&gt;%</span> <span class="fu">knitr</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/knitr/man/kable.html" class="external-link">kable</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
 <table style="width:100%;" class="table">
@@ -320,10 +318,10 @@
 </tr>
 </tbody>
 </table>
-<ol start="2" style="list-style-type: decimal">
-<li>
-<code>gbt_bonds</code>: bond’s general information</li>
-</ol>
+</div>
+<div class="section level4">
+<h4 id="b-gbt_bonds-bonds-general-information">b) <code>gbt_bonds</code>: bond’s general information<a class="anchor" aria-label="anchor" href="#b-gbt_bonds-bonds-general-information"></a>
+</h4>
 <div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu">utils</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">gbt_bonds</span><span class="op">)</span> <span class="op">%&gt;%</span> <span class="fu">knitr</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/knitr/man/kable.html" class="external-link">kable</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
 <table style="width:100%;" class="table">
@@ -482,10 +480,10 @@
 </tr>
 </tbody>
 </table>
-<ol start="3" style="list-style-type: decimal">
-<li>
-<code>gbt_key_performance_indicators</code>: measurements of impact and outcome KPIs</li>
-</ol>
+</div>
+<div class="section level4">
+<h4 id="c-gbt_key_performance_indicators-measurements-of-impact-and-outcome-kpis">c) <code>gbt_key_performance_indicators</code>: measurements of impact and outcome KPIs<a class="anchor" aria-label="anchor" href="#c-gbt_key_performance_indicators-measurements-of-impact-and-outcome-kpis"></a>
+</h4>
 <div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu">utils</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">gbt_key_performance_indicators</span><span class="op">)</span> <span class="op">%&gt;%</span> <span class="fu">knitr</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/knitr/man/kable.html" class="external-link">kable</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
 <table class="table">
@@ -628,10 +626,10 @@
 </tr>
 </tbody>
 </table>
-<ol start="4" style="list-style-type: decimal">
-<li>
-<code>gbt_projects</code>: detailed information of the projects receiving disbursements</li>
-</ol>
+</div>
+<div class="section level4">
+<h4 id="d-gbt_projects-detailed-information-of-the-projects-receiving-disbursements">d) <code>gbt_projects</code>: detailed information of the projects receiving disbursements<a class="anchor" aria-label="anchor" href="#d-gbt_projects-detailed-information-of-the-projects-receiving-disbursements"></a>
+</h4>
 <div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu">utils</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">gbt_projects</span><span class="op">)</span> <span class="op">%&gt;%</span> <span class="fu">knitr</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/knitr/man/kable.html" class="external-link">kable</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
 <table class="table">
@@ -774,10 +772,10 @@
 </tr>
 </tbody>
 </table>
-<ol start="5" style="list-style-type: decimal">
-<li>
-<code>gbt_tranches</code>: individual bond-tranche information</li>
-</ol>
+</div>
+<div class="section level4">
+<h4 id="e-gbt_tranches-individual-bond-tranche-information">e) <code>gbt_tranches</code>: individual bond-tranche information<a class="anchor" aria-label="anchor" href="#e-gbt_tranches-individual-bond-tranche-information"></a>
+</h4>
 <div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu">utils</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">gbt_tranches</span><span class="op">)</span> <span class="op">%&gt;%</span> <span class="fu">knitr</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/knitr/man/kable.html" class="external-link">kable</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
 <table class="table">
@@ -880,10 +878,10 @@
 </tr>
 </tbody>
 </table>
-<ol start="6" style="list-style-type: decimal">
-<li>
-<code>gbt_data_dictionary</code>: index (description of variable names per data.)</li>
-</ol>
+</div>
+<div class="section level4">
+<h4 id="f-gbt_data_dictionary-index-description-of-variable-names-per-data">f) <code>gbt_data_dictionary</code>: index (description of variable names per data.)<a class="anchor" aria-label="anchor" href="#f-gbt_data_dictionary-index-description-of-variable-names-per-data"></a>
+</h4>
 <div class="sourceCode" id="cb8"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu">utils</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">gbt_data_dictionary</span><span class="op">)</span> <span class="op">%&gt;%</span> <span class="fu">knitr</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/knitr/man/kable.html" class="external-link">kable</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
 <table class="table">
@@ -946,6 +944,7 @@
 </tr>
 </tbody>
 </table>
+</div>
 </div>
 </div>
   </main><aside class="col-md-3"><div class="license">
