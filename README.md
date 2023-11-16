@@ -89,10 +89,9 @@ Now we can have a look at the first six observations per data
 
 ``` r
 library(gbtransparency)
-## basic example code
 ```
 
-### a) `gbt_allocations`: allocation of proceeds to project categories using international standards (GBP, CBI)
+#### a) `gbt_allocations`: allocation of proceeds to project categories using international standards (GBP, CBI)
 
 ``` r
 utils::head(x = gbt_allocations) %>% knitr::kable()
@@ -107,7 +106,7 @@ utils::head(x = gbt_allocations) %>% knitr::kable()
 | 1fd5c178da6148569a42c52f45981714 | Bancolombia Bono Verde 1 | Climate Bonds Initiative Project Classification | Energy           | Hydro       | GB 1 Proyecto 4 | Colombia | 2016-12-05      | 2016-12-05        | COP                 |                   79175253000 |                   79175253000 | COP           |             79175253000 |      25865474 | TRUE        |                   0.92 |
 | 1fd5c178da6148569a42c52f45981714 | Bancolombia Bono Verde 1 | ICMA Green Bonds Principles Project Categories  | Renewable energy | Generation  | GB 1 Proyecto 4 | Colombia | 2016-12-05      | 2016-12-05        | COP                 |                   79175253000 |                   79175253000 | COP           |             79175253000 |      25865474 | TRUE        |                   0.92 |
 
-2)  `gbt_bonds`: bond’s general information
+#### b) `gbt_bonds`: bond’s general information
 
 ``` r
 utils::head(x = gbt_bonds) %>% knitr::kable()
@@ -122,8 +121,7 @@ utils::head(x = gbt_bonds) %>% knitr::kable()
 | <https://www.greenbondtransparency.com/bond-info/?handle=de08d71d4fcd410eac1c1c388f5743cc> | de08d71d4fcd410eac1c1c388f5743cc | BRRANIDBS031 | NA        | NA           | RANI14         | Irani Green Bond 2029       | Irani Papel e Embalagem S.A.                | Non-Financial Corporate | Brazil              | FALSE | NA                                                                                                                  | 2021-03-31    | 2029-12-15    |   10531304 |             6.00e+07 | BRL           |
 | <https://www.greenbondtransparency.com/bond-info/?handle=33ceef813ef14aac8ab44dc3a53606d8> | 33ceef813ef14aac8ab44dc3a53606d8 | COB07CB00611 | NA        | NA           | NA             | Bancolombia Bono Sostenible | Grupo Bancolombia                           | Financial Corporate     | Colombia            | FALSE | <https://www.greenbondtransparency.com/download-document/?entity=Framework&handle=e7161c8807ca44e085439ddf548d7489> | 2019-07-19    | 2024-07-19    |  206408402 |             6.57e+11 | COP           |
 
-3)  `gbt_key_performance_indicators`: measurements of impact and outcome
-    KPIs
+#### c) `gbt_key_performance_indicators`: measurements of impact and outcome KPIs
 
 ``` r
 utils::head(x = gbt_key_performance_indicators) %>% knitr::kable()
@@ -138,8 +136,7 @@ utils::head(x = gbt_key_performance_indicators) %>% knitr::kable()
 | 826fb91751eb4970ac578c6e8f0929fc | AES Gener Green Bond     | ISO                                             | Other            | Unspecified | Wind Projects     | Chile     | tCO2e avoided | metric ton |        140982 |         157700 | TRUE              | NA               | 2020-01-01               | 2020-12-31             |
 | 826fb91751eb4970ac578c6e8f0929fc | AES Gener Green Bond     | EU Taxonomy Green Bonds Standard                | Other            | Unspecified | Wind Projects     | Chile     | tCO2e avoided | metric ton |        140982 |         157700 | TRUE              | NA               | 2020-01-01               | 2020-12-31             |
 
-4)  `gbt_projects`: detailed information of the projects receiving
-    disbursements
+#### d) `gbt_projects`: detailed information of the projects receiving disbursements
 
 ``` r
 utils::head(x = gbt_projects) %>% knitr::kable()
@@ -154,7 +151,7 @@ utils::head(x = gbt_projects) %>% knitr::kable()
 | fd47a3cbf44c4c7bb9c69c5ad3fcc8e0 | CBI Certified Portfolio      | ICMA Green Bonds Principles Project Categories  | Renewable energy | Generation  | Construction of Photovoltaic System | NA                    | Chile    | -40.22497 | -72.39668 | Ministry of Energy | TRUE        |                      1 |                   NA | Construction of 151 individual self-generation systems consisting of a 2.76 kWp PV plant and a 25 kWh battery bank. All systems are located on Huapi Island, Futrono commune, Los Lagos region |
 | fd47a3cbf44c4c7bb9c69c5ad3fcc8e0 | CBI Certified Portfolio      | Climate Bonds Initiative Project Classification | Energy           | Solar       | Construction of Photovoltaic System | NA                    | Chile    | -40.22497 | -72.39668 | Ministry of Energy | TRUE        |                      1 |                   NA | Construction of 151 individual self-generation systems consisting of a 2.76 kWp PV plant and a 25 kWh battery bank. All systems are located on Huapi Island, Futrono commune, Los Lagos region |
 
-5)  `gbt_tranches`: individual bond-tranche information
+#### e) `gbt_tranches`: individual bond-tranche information
 
 ``` r
 utils::head(x = gbt_tranches) %>% knitr::kable()
@@ -169,8 +166,7 @@ utils::head(x = gbt_tranches) %>% knitr::kable()
 | 0f91b88562524743ad5ecf105cddab89 | Banco Nacional de Costa Rica 2021       | United States | NA             | USD              |                         5.0e+08 |                        5.0e+08 | USD           |                     5.0e+08 |         500000000 |
 | 19e36a4428614da782362502bd1291a3 | Attend Ambiental 2026                   | Brazil        | NA             | BRL              |                         5.5e+07 |                        5.5e+07 | BRL           |                     5.5e+07 |          13000000 |
 
-6)  `gbt_data_dictionary`: index (description of variable names per
-    data.)
+#### f) `gbt_data_dictionary`: index (description of variable names per data.)
 
 ``` r
 utils::head(x = gbt_data_dictionary) %>% knitr::kable()

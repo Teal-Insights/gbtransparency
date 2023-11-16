@@ -89,13 +89,12 @@ Now we can have a look at the first six observations per data
 
 ```{r example}
 library(gbtransparency)
-## basic example code
 ```
 
 ```{r}
 
 ```
-### a) `gbt_allocations`:	allocation of proceeds to project categories using international standards (GBP, CBI)
+#### a) `gbt_allocations`:	allocation of proceeds to project categories using international standards (GBP, CBI)
 ```{r}
 utils::head(x = gbt_allocations) %>% knitr::kable()
 ```
@@ -103,7 +102,7 @@ utils::head(x = gbt_allocations) %>% knitr::kable()
 ```{r}
 
 ```
-b) `gbt_bonds`:	bond’s general information
+#### b) `gbt_bonds`:	bond’s general information
 ```{r}
 utils::head(x = gbt_bonds) %>% knitr::kable()
 ```
@@ -111,7 +110,7 @@ utils::head(x = gbt_bonds) %>% knitr::kable()
 ```{r}
 
 ```
-c) `gbt_key_performance_indicators`:	measurements of impact and outcome KPIs
+#### c) `gbt_key_performance_indicators`:	measurements of impact and outcome KPIs
 ```{r}
 utils::head(x = gbt_key_performance_indicators) %>% knitr::kable()
 ```
@@ -119,7 +118,7 @@ utils::head(x = gbt_key_performance_indicators) %>% knitr::kable()
 ```{r}
 
 ```
-d) `gbt_projects`:	detailed information of the projects receiving disbursements
+#### d) `gbt_projects`:	detailed information of the projects receiving disbursements
 ```{r}
 utils::head(x = gbt_projects) %>% knitr::kable()
 ```
@@ -127,7 +126,7 @@ utils::head(x = gbt_projects) %>% knitr::kable()
 ```{r}
 
 ```
-e) `gbt_tranches`:	individual bond-tranche information
+#### e) `gbt_tranches`:	individual bond-tranche information
 ```{r}
 utils::head(x = gbt_tranches) %>% knitr::kable()
 ```
@@ -135,7 +134,7 @@ utils::head(x = gbt_tranches) %>% knitr::kable()
 ```{r}
 
 ```
-f) `gbt_data_dictionary`:	index (description of variable names per data.)
+#### f) `gbt_data_dictionary`:	index (description of variable names per data.)
 ```{r}
 utils::head(x = gbt_data_dictionary) %>% knitr::kable()
 ```
