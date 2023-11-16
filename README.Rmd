@@ -44,7 +44,7 @@ There is also an additional file named `index`. This shows description of variab
 
 2. **`gbtransparency` is a personal project**:  While the package author works as a [consultant to AidData](https://www.linkedin.com/feed/update/urn:li:activity:7067478837885849600/) this package is a personal project. The author built the package for his own own use, but hopes that it can grow into a robust package that can aid researchers, policymakers, and others interested in gaining actionable, empirically-based insights about Green Bond Transparency datasets. 
 
-## Installation
+### Installation
 
 You can install the development version of `gbtransparency` from [GitHub](https://github.com/) with:
 
@@ -58,7 +58,7 @@ devtools::install_github("Teal-Insights/gbtransparency")
 
 This package will likely never be published on [CRAN](https://cran.r-project.org/) because the data file sizes are too big.
 
-## Using gbtransparency package
+### Using gbtransparency package
 
 The datasets in the packages are as follow:
 ```{r echo=FALSE, message=FALSE,warning=FALSE}
@@ -95,7 +95,7 @@ library(gbtransparency)
 ```{r}
 
 ```
-a) `gbt_allocations`:	allocation of proceeds to project categories using international standards (GBP, CBI)
+### a) `gbt_allocations`:	allocation of proceeds to project categories using international standards (GBP, CBI)
 ```{r}
 utils::head(x = gbt_allocations) %>% knitr::kable()
 ```

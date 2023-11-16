@@ -55,7 +55,7 @@ of variable names per data.
     gaining actionable, empirically-based insights about Green Bond
     Transparency datasets.
 
-## Installation
+### Installation
 
 You can install the development version of `gbtransparency` from
 [GitHub](https://github.com/) with:
@@ -72,7 +72,7 @@ This package will likely never be published on
 [CRAN](https://cran.r-project.org/) because the data file sizes are too
 big.
 
-## Using gbtransparency package
+### Using gbtransparency package
 
 The datasets in the packages are as follow:
 
@@ -92,8 +92,7 @@ library(gbtransparency)
 ## basic example code
 ```
 
-1)  `gbt_allocations`: allocation of proceeds to project categories
-    using international standards (GBP, CBI)
+### a) `gbt_allocations`: allocation of proceeds to project categories using international standards (GBP, CBI)
 
 ``` r
 utils::head(x = gbt_allocations) %>% knitr::kable()
