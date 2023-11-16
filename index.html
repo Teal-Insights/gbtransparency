@@ -102,9 +102,9 @@
 <li><p><strong><code>gbtransparency</code> is a personal project</strong>: While the package author works as a <a href="https://www.linkedin.com/feed/update/urn:li:activity:7067478837885849600/" class="external-link">consultant to AidData</a> this package is a personal project. The author built the package for his own own use, but hopes that it can grow into a robust package that can aid researchers, policymakers, and others interested in gaining actionable, empirically-based insights about Green Bond Transparency datasets.</p></li>
 </ol>
 </div>
-<div class="section level2">
-<h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
-</h2>
+<div class="section level3">
+<h3 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
+</h3>
 <p>You can install the development version of <code>gbtransparency</code> from <a href="https://github.com/" class="external-link">GitHub</a> with:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co"># install the `devtools` package if not yet installed</span></span>
@@ -114,9 +114,9 @@
 <span><span class="fu">devtools</span><span class="fu">::</span><span class="fu">install_github</span><span class="op">(</span><span class="st">"Teal-Insights/gbtransparency"</span><span class="op">)</span></span></code></pre></div>
 <p>This package will likely never be published on <a href="https://cran.r-project.org/" class="external-link">CRAN</a> because the data file sizes are too big.</p>
 </div>
-<div class="section level2">
-<h2 id="using-gbtransparency-package">Using gbtransparency package<a class="anchor" aria-label="anchor" href="#using-gbtransparency-package"></a>
-</h2>
+<div class="section level3">
+<h3 id="using-gbtransparency-package">Using gbtransparency package<a class="anchor" aria-label="anchor" href="#using-gbtransparency-package"></a>
+</h3>
 <p>The datasets in the packages are as follow:</p>
 <table class="table">
 <colgroup>
@@ -158,10 +158,10 @@
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://special-adventure-gq3r94k.pages.github.io/">gbtransparency</a></span><span class="op">)</span></span>
 <span><span class="co">## basic example code</span></span></code></pre></div>
-<ol style="list-style-type: decimal">
-<li>
-<code>gbt_allocations</code>: allocation of proceeds to project categories using international standards (GBP, CBI)</li>
-</ol>
+</div>
+<div class="section level3">
+<h3 id="a-gbt_allocations-allocation-of-proceeds-to-project-categories-using-international-standards-gbp-cbi">a) <code>gbt_allocations</code>: allocation of proceeds to project categories using international standards (GBP, CBI)<a class="anchor" aria-label="anchor" href="#a-gbt_allocations-allocation-of-proceeds-to-project-categories-using-international-standards-gbp-cbi"></a>
+</h3>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu">utils</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">gbt_allocations</span><span class="op">)</span> <span class="op">%&gt;%</span> <span class="fu">knitr</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/knitr/man/kable.html" class="external-link">kable</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
 <table style="width:100%;" class="table">
