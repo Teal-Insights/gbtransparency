@@ -64,7 +64,7 @@ You can install the development version of `gbtransparency` from
 # install the `devtools` package if not yet installed
 # install.packages("devtools")
 
-# install chinadevfin2 from GitHub
+# install gbtransparency from GitHub
 devtools::install_github("Teal-Insights/gbtransparency")
 ```
 
