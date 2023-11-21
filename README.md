@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# gbtransparency
+# gbtransparency <a href="https://special-adventure-gq3r94k.pages.github.io/"><img src="man/figures/logo.png" align="right" height="139" alt="gbtransparency website" /></a>
 
 <!-- badges: start -->
 
