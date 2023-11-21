@@ -14,7 +14,7 @@ hexSticker::sticker(
   # s - subplot details
   s_x=1, # centered
   s_y=.77, # gives a little bit of margin with title
-  s_width=1.2, # make it a little wider
+  s_width=1, # make it a little wider
   s_height=1,
   p_color = "white",
   p_fontface = "bold",
