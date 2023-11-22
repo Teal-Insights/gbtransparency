@@ -7,7 +7,7 @@ gbt_projects <- readr::read_csv(file = data_path) %>%
 
 # Exporting data: ---------------------------------------------------------
 # exporting to ins/extdata directory
-readr::write_csv(x = gbt_projects,file = "data-raw/extdata/gbt_projects.csv")
+readr::write_csv(x = gbt_projects,file = "inst/extdata/gbt_projects.csv")
 
 # exporting to data directory
 usethis::use_data(gbt_projects, overwrite = TRUE,compress = "xz")
