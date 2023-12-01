@@ -30,3 +30,4 @@ Imports:
     dplyr
 Config/testthat/edition: 3
 URL: https://github.com/Teal-Insights/gbtransparency
+BugReports: https://github.com/Teal-Insights/gbtransparency/issues
