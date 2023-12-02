@@ -9,7 +9,7 @@
 [![LifeCycle](https://img.shields.io/badge/lifecycle-experimental-orange)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 [![Test
 coverage](https://github.com/Teal-Insights/gbtransparency/actions/workflows/test-coverage.yaml/badge.svg)](https://github.com/Teal-Insights/gbtransparency/actions/workflows/test-coverage.yaml)
-[![codecov](https://codecov.io/gh/Teal-Insights/gbtransparency/branch/master/graph/badge.svg)](https://codecov.io/gh/Teal-Insights/gbtransparency)
+[![codecov](https://codecov.io/gh/Teal-Insights/gbtransparency/graph/badge.svg?token=Q5PN815L2K)](https://codecov.io/gh/Teal-Insights/gbtransparency)
 [![License:
 CC0](https://img.shields.io/badge/License-CC0-lightgrey.svg)](https://choosealicense.com/licenses/cc0-1.0/)
 [![Website](https://github.com/Teal-Insights/gbtransparency/actions/workflows/pkgdown.yaml/badge.svg)](https://github.com/Teal-Insights/gbtransparency/actions/workflows/pkgdown.yaml)
